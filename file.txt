@@ -1,0 +1,11 @@
+PING x.com (162.159.140.229) 56(84) bytes of data.
+64 bytes from 162.159.140.229: icmp_seq=1 ttl=57 time=5.37 ms
+64 bytes from 162.159.140.229: icmp_seq=2 ttl=57 time=4.58 ms
+64 bytes from 162.159.140.229: icmp_seq=3 ttl=57 time=5.38 ms
+64 bytes from 162.159.140.229: icmp_seq=4 ttl=57 time=7.50 ms
+64 bytes from 162.159.140.229: icmp_seq=5 ttl=57 time=5.32 ms
+
+--- x.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+rtt min/avg/max/mdev = 4.579/5.629/7.498/0.981 ms
+Successfully connected to x.com 🎉🎉
