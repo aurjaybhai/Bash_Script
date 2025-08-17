@@ -5,10 +5,6 @@ echo "Red text"
 tput sgr0
 echo "This is not red text"
 
-
-
-
-
 # echo "Select Your Fav Planet!"
 # select planet in "Earth" "Saturn" "Venus" "Quit"
 # do

@@ -1,14 +1,17 @@
 #!/bin/bash
 
-# blink=$(tput blink) 
+# blink=$(tput blink)
 # reset=$(tput sgr0)
 # printf "%s" "${blink} Enter Your Name: ${reset}"
 # read -r name
 # echo "Hi $name"
 
 password=123
-tput cup 15 40; tput setab 4; tput setaf 1;
-echo "Welcome to my program!!"; tput sgr0
+tput cup 15 40
+tput setab 4
+tput setaf 1
+echo "Welcome to my program!!"
+tput sgr0
 tput cup 17 40
 echo "Enter Password "
 tput cup 17 55
@@ -16,7 +19,7 @@ tput cup 17 55
 read -rs usrpwd # -s makes silent which invisble the password -r takes raw input prevent backslash(\n)
 
 if [[ "$usrpwd" == "$password" ]]; then
-cmatrix
+    cmatrix
 else
     echo "Invalid Password"
 fi
@@ -26,7 +29,7 @@ echo -e "John\t25\tNew York"
 echo -e "Alice\t30\tLondon"
 
 # read -p "myname" Your Name
-: << COMMENT
+: <<COMMENT
 
 Common format specifiers:
 %s = String
@@ -35,9 +38,7 @@ Common format specifiers:
 %% = Literal % symbol
 COMMENT
 
-
-
-: << COMMENT
+: <<COMMENT
 
  Without -r 
 read name
@@ -46,21 +47,13 @@ Variable gets: JohnnDoe (backslash-n becomes newline)
 
 COMMENT
 
-
-
-: << COMMENT
+: <<COMMENT
 
 read -r name  
 # If user types: John\nDoe
 # Variable gets: John\nDoe (exactly what user typed)
 
 COMMENT
-
-
-
-
-
-
 
 #tput clear
 #echo -n "Total number of rows on screen = " # -n supresses newline
@@ -72,4 +65,3 @@ COMMENT
 #echo "This should be in bold"
 #tput sgr0 # RESET ALL FORMATTING(tput way)
 #echo "Bye Bye"
-
