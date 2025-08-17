@@ -2,7 +2,9 @@
 
 PS3="Select an Option : " #ps3 is special variable in bash scripting
 
-select os in "Ubuntu" "Arch" "Linux Mint" "Fedora" "Quit"; do
+options=("Ubuntu" "Arch" "Linux Mint" "Fedora" "Quit")
+
+select os in "${options[@]}"; do
     case $os in "Ubuntu")
         echo "You choosen $os"
         break
