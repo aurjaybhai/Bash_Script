@@ -15,7 +15,7 @@ do
            (Q)uit
     ------------------------------
 EOF
-    read -n1 -s #give me exactly one character and then stop waiting for "ENTER" key
+    read -n1 -s #give me exactly one character and then stop waiting for "ENTER" key 
     case "$REPLY" in  # If you do not give "read" a variable name fir chup chup into default variable called "$REPLY"
     "1")  echo "you chose choice 1" ;;
     "2")  echo "you chose choice 2" ;;
@@ -24,5 +24,5 @@ EOF
     "q")  echo "case sensitive!!"   ;; 
      * )  echo "invalid option"     ;;
     esac
-    sleep 1 # shows for 1 second before vanish
+    sleep 1 # shows for 1 second before vanish 
 done
