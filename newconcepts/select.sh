@@ -1,4 +1,4 @@
-##!/bin/bash
+#!/bin/bash
 
 tput setaf 1
 echo "Red text"
