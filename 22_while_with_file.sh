@@ -1,5 +1,5 @@
 #!/bin/bash
 
-while read myvar; do
-    echo "Value from file is $myvar"
+while read-r  myvar; do
+    echo "Value from file is $(myvar)"
 done <names.txt
