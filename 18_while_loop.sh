@@ -7,3 +7,5 @@ while [[ $count -le $num ]]; do
     echo "Value of count var is $count"
     let count++
 done
+
+# condition jab tak true rahegha tab tak chalega "while" loop
