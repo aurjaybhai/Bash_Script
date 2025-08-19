@@ -12,3 +12,21 @@ done <test.csv
 # (1)  < - Input Redirection(from file)
 # (2) << -multiple lines of input directly in the script
 # (3) <<< - content of a variable or string and feeds it as input
+
+###############################################################################################
+###############################################################################################
+
+# Unary Operators (one operand)
+
+# [[ -n "$var" ]]     # not empty
+# [[ -z "$var" ]]     # empty  
+# [[ -f "$file" ]]    # file exists
+# [[ -d "$dir" ]]     # directory exists
+
+################################################################################################
+################################################################################################
+# Binary Operators (two operands)
+
+# [[ "$a" == "$b" ]]  # equal
+# [[ "$a" != "$b" ]]  # not equal
+# [[ "$a" -gt "$b" ]] # greater than (numbers)
